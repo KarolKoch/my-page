@@ -1,0 +1,205 @@
+* {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body {
+  overflow-x: hidden;
+  max-width: 100vw;
+  overflow-y: auto;
+}
+header {
+  position: relative;
+  margin: -23px -15px 0px -15px;
+  height: 180px;
+  background: url("https://cdn.pixabay.com/photo/2023/05/31/12/20/car-8031261_1280.jpg") no-repeat center;
+  background-size: 100%;
+  background-color: black;
+}
+nav {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+header h1 {
+  position: relative;
+  top: 50px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bolder;
+  color: whitesmoke;
+}
+main {
+  display: flex;
+  flex-direction: row;
+}
+main + div {
+  border: 10px solid black;
+}
+div.inner {
+  text-align: center;
+  width: 150px;
+  height: 20px;
+  padding: 2%;
+  margin-top: -120px;
+  margin-left: -50px;
+  background-color: #111;
+  color: aliceblue;
+  font-size: 18px;
+  box-shadow: 2px 2px 2px #333;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border: 2px outset #111;
+}
+div+p {
+  margin-top: 50px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+ li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #111;
+}
+h1 {
+  text-align: center;
+}
+#Karol {
+  height: 400px;
+  width: 320px;
+}
+#Karol:hover {
+  transform: scale(1.02);
+  transition: all 1s;
+}
+.image-box {
+  height: fit-content;
+  padding: 8px;
+  background-color: #111;
+  border-radius: 4px;
+  margin: 5% auto;
+}
+#Karol + p {
+  text-align: center;
+  color: aliceblue;
+}
+h1:hover {
+  transform: scale(1.05);
+  transition: all 1s;
+}
+footer {
+  margin: -23px -15px 0px -15px;
+  height: 20px;
+  border-top: 1px solid #111;
+  padding: 70px;
+  align-items: center;
+  text-align: center;
+  background-color: #333;
+}
+.text-box {
+  text-align: justify;
+  padding: 5%;
+  box-shadow: 5px 5px 10px #3a3a3a;
+  border: 1.9px solid  #383838;
+  margin: auto auto auto 5%;
+}
+.image-box main::after {
+  float: left;
+  width: 50%;
+  padding: 15px;
+}
+.main::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width:600px) {
+  header {
+    margin-right: -25px;
+    background-size: cover;
+  }
+  #Karol {
+    margin-top: 60px;
+    margin-right: -20px;
+    max-width: fit-content;
+  }
+  main {
+    flex-wrap: wrap;
+  }
+  main .image-box {
+    margin: auto;
+    padding: auto;
+  }
+  main div {
+    padding: auto;
+    margin-right: 0%;
+    padding-right: 0%;
+  }
+  .image-box {
+    align-items: center;
+    justify-content: center;
+  }
+  footer{
+    margin: auto;
+  }
+}
+@media (max-width: 768px) {
+  .box {
+    width: 100%;
+  }
+  main {
+    flex-wrap: wrap;
+  }
+  div.inner {
+    text-align: center;
+    width: 150px;
+    height: 20px;
+    padding: 2%;
+    margin-top: -65px;
+    margin-left: -20px;
+    background-color: #111;
+    color: aliceblue;
+    font-size: 18px;
+    box-shadow: 2px 2px 2px #333;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 2px outset #111;
+  }
+  .text-box {
+    margin: auto auto 50px auto;
+  }
+}
+@media (max-width: 320px) {
+  div.inner {
+    text-align: center;
+    width: 150px;
+    height: 20px;
+    padding: 2%;
+    margin-top: -35px;
+    margin-left: 2px;
+    background-color: #111;
+    color: aliceblue;
+    font-size: 18px;
+    box-shadow: 2px 2px 2px #333;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 2px outset #111;
+  }
+  .text-box {
+    margin: 50px auto 50px auto;
+  }
+  .image-box {
+    margin: 20px auto 50px auto;
+    padding: auto;
+    height: fit-content;
+  }
+}
